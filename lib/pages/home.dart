@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF121212),
-      body: SizedBox(
+      body: Container(
         height: .maxFinite,
         width: .maxFinite,
         child: Column(
@@ -42,100 +42,104 @@ class _HomeState extends State<Home> {
               ),
 
               style: ButtonStyle(
-                minimumSize: .all<Size>(Size(338, 50)),
-                backgroundColor: MaterialStateProperty.all<Color>(
-                  Color(0xFF1ED760),
-                ),
+                minimumSize: .all<Size>(Size(338,50)),
+                backgroundColor: .all<Color>(Color(0xFF1ED760)),
               ),
             ),
             SizedBox(height: 12),
             Container(
-              decoration: BoxDecoration(
-                border: BoxBorder.all(color: Colors.white),
-                borderRadius: .circular(45),
-              ),
-              height: 50,
-              width: 338,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: .spaceAround,
-                  children: [
-                    Image.asset('assets/images/google.png'),
-                    Text(
-                      'Continue with Google',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontFamily: 'Avenir',
-                        fontWeight: .bold,
-                      ),
+                decoration: BoxDecoration(
+                    border: BoxBorder.all(
+                      color: Colors.white,
                     ),
-                    Container(width: 10),
-                  ],
+                    borderRadius: .circular(45)
                 ),
-              ),
+                height: 50,
+                width: 338,
+                child:  Center(
+                    child: Row(
+                      mainAxisAlignment: .spaceAround,
+                      children: [
+                        Image.asset('assets/images/google.png'),
+                        Text(
+                          'Continue with Google',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: 'Avenir',
+                            fontWeight: .bold,
+                          ),
+                        ),
+                        Container(width: 10,)
+                      ],
+                    )
+                )
             ),
             SizedBox(height: 12),
             Container(
-              decoration: BoxDecoration(
-                border: BoxBorder.all(
-                  color: Colors.white,
-                ),
-                borderRadius: .circular(45)
-              ),
-              height: 50,
-              width: 338,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: .spaceAround,
-                  children: [
-                    Image.asset('assets/images/facebook.png'),
-                    Text(
-                      'Continue with Facebook',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontFamily: 'Avenir',
-                        fontWeight: .bold,
-                      ),
+                decoration: BoxDecoration(
+                    border: BoxBorder.all(
+                      color: Colors.white,
                     ),
-                    Container(width: 10),
-                  ],
+                    borderRadius: .circular(45)
                 ),
-              ),
+                height: 50,
+                width: 338,
+                child:  Center(
+                    child: Row(
+                      mainAxisAlignment: .spaceAround,
+                      children: [
+                        Image.asset('assets/images/facebook.png'),
+                        Text(
+                          'Continue with Facebook',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: 'Avenir',
+                            fontWeight: .bold,
+                          ),
+                        ),
+                        Container(width: 10,)
+                      ],
+                    )
+                )
             ),
 
             SizedBox(height: 12),
             Container(
-              decoration: BoxDecoration(
-                border: BoxBorder.all(color: Colors.white),
-                borderRadius: .circular(45),
-              ),
-              height: 50,
-              width: 338,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: .spaceAround,
-                  children: [
-                    Image.asset('assets/images/apple.png'),
-                    Text(
-                      'Continue with Apple',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontFamily: 'Avenir',
-                        fontWeight: .bold,
-                      ),
+                decoration: BoxDecoration(
+                    border: BoxBorder.all(
+                      color: Colors.white,
                     ),
-                    Container(width: 10),
-                  ],
+                    borderRadius: .circular(45)
                 ),
-              ),
+                height: 50,
+                width: 338,
+                child:  Center(
+                    child: Row(
+                      mainAxisAlignment: .spaceAround,
+                      children: [
+                        Image.asset('assets/images/apple.png'),
+                        Text(
+                          'Continue with Apple',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: 'Avenir',
+                            fontWeight: .bold,
+                          ),
+                        ),
+                        Container(width: 10,)
+                      ],
+                    )
+                )
             ),
             SizedBox(height: 12,),
             Text('Log in', style: TextStyle(
               color: Colors.white, fontWeight: .bold
-            )),
+            ),)
+
+
           ],
         ),
       ),
