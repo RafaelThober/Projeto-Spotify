@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
             ),
             SizedBox(height: 12,),
             Text('Log in', style: TextStyle(
-              color: Colors.white, fontWeight: .bold
+                color: Colors.white, fontWeight: .bold
             ),)
 
 
