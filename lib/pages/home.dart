@@ -14,133 +14,136 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color(0xFF121212),
       body: Container(
-        height: .maxFinite,
-        width: .maxFinite,
-        child: Column(
-          children: [
-            Image.asset('assets/images/back.png', height: 400, width: .maxFinite, fit: .cover,),
-            Text(
-              'Millions of Songs.\n Free on Spotify.',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 28,
-                fontFamily: 'Avenir',
-                fontWeight: .bold,
+        height: double.infinity,
+        width: double.infinity,
+        color: const Color(0xFF121212),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image.asset(
+                'assets/images/back.png',
+                width: double.infinity,
+                fit: BoxFit.fitWidth,
               ),
-            ),
-            SizedBox(height: 22),
-            ElevatedButton(
-              onPressed: () => {},
-              child: Text(
-                'Sign up free',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
+
+              Text(
+                'Millions of Songs.\nFree on Spotify.',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
                   fontFamily: 'Avenir',
-                  fontWeight: .bold,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
 
-              style: ButtonStyle(
-                minimumSize: .all<Size>(Size(338,50)),
-                backgroundColor: .all<Color>(Color(0xFF1ED760)),
+              SizedBox(height: 22),
+              ElevatedButton(
+                onPressed: () => {},
+                child: Text(
+                  'Sign up free',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                    fontFamily: 'Avenir',
+                    fontWeight: .bold,
+                  ),
+                ),
+
+                style: ButtonStyle(
+                  minimumSize: .all<Size>(Size(338, 50)),
+                  backgroundColor: .all<Color>(Color(0xFF1ED760)),
+                ),
               ),
-            ),
-            SizedBox(height: 12),
-            Container(
+              SizedBox(height: 12),
+              Container(
                 decoration: BoxDecoration(
-                    border: BoxBorder.all(
-                      color: Colors.white,
-                    ),
-                    borderRadius: .circular(45)
+                  border: BoxBorder.all(color: Colors.white),
+                  borderRadius: .circular(45),
                 ),
                 height: 50,
                 width: 338,
-                child:  Center(
-                    child: Row(
-                      mainAxisAlignment: .spaceAround,
-                      children: [
-                        Image.asset('assets/images/google.png'),
-                        Text(
-                          'Continue with Google',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Avenir',
-                            fontWeight: .bold,
-                          ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: .spaceAround,
+                    children: [
+                      Image.asset('assets/images/google.png'),
+                      Text(
+                        'Continue with Google',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontFamily: 'Avenir',
+                          fontWeight: .bold,
                         ),
-                        Container(width: 10,)
-                      ],
-                    )
-                )
-            ),
-            SizedBox(height: 12),
-            Container(
+                      ),
+                      Container(width: 10),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 12),
+              Container(
                 decoration: BoxDecoration(
-                    border: BoxBorder.all(
-                      color: Colors.white,
-                    ),
-                    borderRadius: .circular(45)
+                  border: BoxBorder.all(color: Colors.white),
+                  borderRadius: .circular(45),
                 ),
                 height: 50,
                 width: 338,
-                child:  Center(
-                    child: Row(
-                      mainAxisAlignment: .spaceAround,
-                      children: [
-                        Image.asset('assets/images/facebook.png'),
-                        Text(
-                          'Continue with Facebook',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Avenir',
-                            fontWeight: .bold,
-                          ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: .spaceAround,
+                    children: [
+                      Image.asset('assets/images/facebook.png'),
+                      Text(
+                        'Continue with Facebook',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontFamily: 'Avenir',
+                          fontWeight: .bold,
                         ),
-                        Container(width: 10,)
-                      ],
-                    )
-                )
-            ),
+                      ),
+                      Container(width: 10),
+                    ],
+                  ),
+                ),
+              ),
 
-            SizedBox(height: 12),
-            Container(
+              SizedBox(height: 12),
+              Container(
                 decoration: BoxDecoration(
-                    border: BoxBorder.all(
-                      color: Colors.white,
-                    ),
-                    borderRadius: .circular(45)
+                  border: BoxBorder.all(color: Colors.white),
+                  borderRadius: .circular(45),
                 ),
                 height: 50,
                 width: 338,
-                child:  Center(
-                    child: Row(
-                      mainAxisAlignment: .spaceAround,
-                      children: [
-                        Image.asset('assets/images/apple.png'),
-                        Text(
-                          'Continue with Apple',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Avenir',
-                            fontWeight: .bold,
-                          ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: .spaceAround,
+                    children: [
+                      Image.asset('assets/images/apple.png'),
+                      Text(
+                        'Continue with Apple',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontFamily: 'Avenir',
+                          fontWeight: .bold,
                         ),
-                        Container(width: 10,)
-                      ],
-                    )
-                )
-            ),
-            SizedBox(height: 12,),
-            Text('Log in', style: TextStyle(
-                color: Colors.white, fontWeight: .bold
-            ),)
-
-
-          ],
+                      ),
+                      Container(width: 10),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 12),
+              Text(
+                'Log in',
+                style: TextStyle(color: Colors.white, fontWeight: .bold),
+              ),
+            ],
+          ),
         ),
       ),
     );
